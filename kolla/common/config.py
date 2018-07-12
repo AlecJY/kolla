@@ -49,6 +49,7 @@ _PROFILE_OPTS = [
                     'mariadb',
                     'memcached',
                     'mongodb',
+                    'opendaylight',
                     'openvswitch',
                     'rabbitmq',
                     'redis',
@@ -448,6 +449,22 @@ SOURCES = {
         'type': 'url',
         'location': ('$tarballs_base/neutron-lbaas/'
                      'neutron-lbaas-10.0.1.tar.gz')},
+    'neutron-server-opendaylight-plugin-networking-odl': {
+        'type': 'url',
+        'location': ('$tarballs_base/networking-odl/'
+                     'networking-odl-stable-ocata.tar.gz')},
+    'neutron-server-opendaylight-plugin-networking-bgpvpn': {
+        'type': 'url',
+        'location': ('$tarballs_base/networking-bgpvpn/'
+                     'networking-bgpvpn-stable-ocata.tar.gz')},
+    'neutron-server-opendaylight-plugin-networking-l2gw': {
+        'type': 'url',
+        'location': ('$tarballs_base/networking-l2gw/'
+                     'networking-l2gw-stable-ocata.tar.gz')},
+    'neutron-server-opendaylight-plugin-networking-sfc': {
+        'type': 'url',
+        'location': ('$tarballs_base/networking-sfc/'
+                     'networking-sfc-stable-ocata.tar.gz')},
     'neutron-server-plugin-neutron-lbaas': {
         'type': 'url',
         'location': ('$tarballs_base/neutron-lbaas/'
@@ -472,6 +489,12 @@ SOURCES = {
         'type': 'url',
         'location': ('$tarballs_base/octavia/'
                      'octavia-0.10.0.tar.gz')},
+    'opendaylight': {
+        'type': 'url',
+        'location': ('https://nexus.opendaylight.org/content/'
+                     'repositories/opendaylight.release/org/opendaylight/'
+                     'integration/distribution-karaf/0.3.4-Lithium-SR4/'
+                     'distribution-karaf-0.3.4-Lithium-SR4.tar.gz')},
     'panko-base': {
         'type': 'url',
         'location': ('$tarballs_base/panko/'
@@ -625,6 +648,10 @@ USERS = {
     'ironic-user': {
         'uid': 42422,
         'gid': 42422,
+    },
+    'odl-user': {
+        'uid': 42462,
+        'gid': 42462,
     },
     'kafka-user': {
         'uid': 42423,

@@ -33,3 +33,6 @@ deb https://packagecloud.io/grafana/stable/debian/ jessie main
 
 # Fluentd repo
 deb http://packages.treasuredata.com/2/ubuntu/xenial/ xenial contrib
+
+# Opendaylight repo
+deb http://ppa.launchpad.net/odl-team/carbon/ubuntu xenial main

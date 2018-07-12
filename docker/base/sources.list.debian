@@ -33,3 +33,6 @@ deb https://packagecloud.io/grafana/stable/debian/ jessie main
 
 # Fluentd repo
 deb http://packages.treasuredata.com/2/debian/jessie/ jessie contrib
+
+# Opendaylight repo
+deb http://people.linaro.org/~marcin.juszkiewicz/debian/stretch/ ./
